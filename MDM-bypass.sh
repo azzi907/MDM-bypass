@@ -30,7 +30,8 @@ getVolumeName() {
 	# Extracting the Volume Name from the Volume Information
 	volumeNameLine=$(echo "$volumeInfo" | grep 'Name:')
 	# Removing unnecessary characters to get the clean Volume Name
-	volumeName=$(echo "$volumeNameLine" | cut -d':' -f2 | cut -d'(' -f1 | xargs)
+	#volumeName=$(echo "$volumeNameLine" | cut -d':' -f2 | cut -d'(' -f1 | xargs)
+	volumeName=$(echo "$volumeNameLine" | cut -d':' -f2 | cut -d'(' -f1 | sed 's/^ *//;s/ *$//')
 
 	echo "$volumeName"
 }
