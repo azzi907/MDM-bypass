@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Global constants
-readonly DEFAULT_SYSTEM_VOLUME="macOS"
-readonly DEFAULT_DATA_VOLUME="macOS - Data"
+readonly DEFAULT_SYSTEM_VOLUME="MacOS"
+readonly DEFAULT_DATA_VOLUME="MacOS - Data"
 
 # Text formating
 RED='\033[1;31m'
